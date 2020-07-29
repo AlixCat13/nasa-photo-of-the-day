@@ -1,5 +1,5 @@
 import React from "react";
-import NasaCard from './NasaCard'
+import NasaCard from './components/NasaCard'
 import "./App.css";
 
 

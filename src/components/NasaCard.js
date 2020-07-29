@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import axios from 'axios'
-import {NasaPhoto} from './NasaPhoto';
+import NasaPhoto from './components/NasaPhoto';
 
 
 

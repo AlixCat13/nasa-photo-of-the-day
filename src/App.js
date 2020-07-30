@@ -8,7 +8,7 @@ function App() {
 return (
   <div className='App'>
     <div className='logo-container'>
-      <img className='Nasa' src={\Photos\NasaLogo2.jpg} alt="NASA Logo" />
+      {/* <img className='Nasa' src={NasaLogo2} alt="NASA Logo" /> */}
     <NasaCard />
     {/* <NasaPhoto /> */}
   </div>

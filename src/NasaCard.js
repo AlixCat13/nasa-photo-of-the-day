@@ -6,13 +6,13 @@ import NasaPhoto from './NasaPhoto';
 
 export default function NasaCard() {
 
- const [photo, setPhoto] = useState([])
+ const [data, setData] = useState([]);
 
  useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=OetXKIRjqEMceTmEcD6vcXiZgHNeT9PEYIODKpTa')
     .then( response => {
         console.log('success!', response)
-        setPhoto(response.data)
+        setData(response.data)
     })
     .catch(error => console.log('Oh No!', error))
     }, [])
@@ -21,10 +21,8 @@ export default function NasaCard() {
 
   return (
     <div className="nasaPhoto">
-      <div className='photo-container'>
-          {photo.map(photo => <NasaPhoto key={photo.id} photo={photo} />)}
-               
-      </div>
+       {data.map(data => <NasaPhoto key={data.id} data={data} />)}
     </div>
   );
 }
+

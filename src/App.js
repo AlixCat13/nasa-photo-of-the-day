@@ -1,6 +1,6 @@
 import React from "react";
 import NasaCard from './NasaCard'
-// import NasaPhoto from './NasaPhoto'
+import NasaLogo1 from './Photos/NasaPhoto1.png'
 import "./App.css";
 
 
@@ -8,9 +8,8 @@ function App() {
 return (
   <div className='App'>
     <div className='logo-container'>
-      {/* <img className='Nasa' src={NasaLogo2} alt="NASA Logo" /> */}
+      <img className='Nasa' src={NasaLogo1} alt="NASA Logo" />
     <NasaCard />
-    {/* <NasaPhoto /> */}
   </div>
   </div> 
 )

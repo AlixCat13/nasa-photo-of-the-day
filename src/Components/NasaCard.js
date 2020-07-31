@@ -8,7 +8,7 @@ export default function NasaCard() {
  const [data, setData] = useState({});
 
  useEffect(() => {
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=OetXKIRjqEMceTmEcD6vcXiZgHNeT9PEYIODKpTa&date=2020-07-30')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=OetXKIRjqEMceTmEcD6vcXiZgHNeT9PEYIODKpTa&date=2020-06-09')
     .then( response => {
         console.log('success!', response)
         setData(response.data)

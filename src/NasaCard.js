@@ -6,7 +6,7 @@ import NasaPhoto from './NasaPhoto';
 
 export default function NasaCard() {
 
- const [data, setData] = useState([]);
+ const [data, setData] = useState({});
 
  useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=OetXKIRjqEMceTmEcD6vcXiZgHNeT9PEYIODKpTa')
